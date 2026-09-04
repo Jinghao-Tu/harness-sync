@@ -1,0 +1,43 @@
+# ... model config
+
+approvals_reviewer = "user"
+personality = "pragmatic"
+sandbox_mode = "danger-full-access"
+approval_policy = "never"
+service_tier = "default"
+model_verbosity = "high"
+
+[features]
+memories = true
+goals = true
+
+[features.multi_agent_v2]
+enabled = false
+
+[agents]
+enabled = false
+
+[memories]
+disable_on_external_context = true
+generate_memories = true
+use_memories = true
+
+[desktop]
+preventSleepWhileRunning = true
+followUpQueueMode = "steer"
+sansFontSize = 15
+codeFontSize = 13
+appearanceLightCodeThemeId = "codex"
+appearanceTheme = "light"
+appearanceDarkCodeThemeId = "catppuccin"
+reduced-motion-preference = "system"
+appearanceDiffMarkerStyle = "color"
+git-commit-instructions = "Use Conventional Commit. Use English."
+git-show-sidebar-pr-icons = false
+conversationDetailMode = "STEPS_COMMANDS"
+show-context-window-usage = true
+enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "ultra", "max"]
+show-ultra-in-model-picker-slider = false
+keepRemoteControlAwakeWhilePluggedIn = true
+git-pr-instructions = "Use Conventional Commit. Use English."
+usePointerCursors = true
