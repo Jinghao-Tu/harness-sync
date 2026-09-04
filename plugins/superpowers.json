@@ -1,0 +1,164 @@
+{
+  "manifest": {
+    "name": "superpowers",
+    "version": "6.3.0",
+    "description": "Software development skills for planning, test-driven development, debugging, code review, and delivery.",
+    "author": {
+      "name": "Jesse Vincent",
+      "email": "jesse@fsck.com",
+      "url": "https://github.com/obra"
+    },
+    "homepage": "https://github.com/obra/superpowers",
+    "repository": "https://github.com/obra/superpowers",
+    "license": "MIT",
+    "keywords": [
+      "brainstorming",
+      "subagent-driven-development",
+      "skills",
+      "planning",
+      "tdd",
+      "debugging",
+      "code-review",
+      "workflow"
+    ],
+    "skills": "./skills/",
+    "interface": {
+      "displayName": "Superpowers",
+      "shortDescription": "面向编码智能体的规划、测试驱动开发、调试与交付工作流",
+      "longDescription": "Use Superpowers to clarify requirements, plan implementations, debug systematically, coordinate development, review code, and verify completed work.",
+      "developerName": "Jesse Vincent",
+      "category": "Developer Tools",
+      "capabilities": [
+        "Interactive",
+        "Read",
+        "Write"
+      ],
+      "defaultPrompt": [
+        "Use $superpowers:brainstorming to clarify this idea before implementation.",
+        "Use $superpowers:using-superpowers to choose suitable skills for this project."
+      ],
+      "websiteURL": "https://github.com/obra/superpowers",
+      "privacyPolicyURL": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "termsOfServiceURL": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+      "brandColor": "#F59E0B",
+      "composerIcon": "./assets/superpowers-small.svg",
+      "logo": "./assets/app-icon.png",
+      "screenshots": []
+    }
+  },
+  "files": ["LICENSE", "README.md", "CODE_OF_CONDUCT.md", "assets"],
+  "skills": {
+    "brainstorming": {
+      "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
+      "interface": {
+        "display_name": "Brainstorming",
+        "short_description": "在实现前澄清目标、需求与约束，并形成经过确认的设计方案",
+        "default_prompt": "Use $superpowers:brainstorming to clarify the requirements and design before implementing this idea."
+      }
+    },
+    "dispatching-parallel-agents": {
+      "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
+      "interface": {
+        "display_name": "Dispatching Parallel Agents",
+        "short_description": "将互不依赖的工作拆分并派发给多个智能体并行高效执行",
+        "default_prompt": "Use $superpowers:dispatching-parallel-agents to delegate independent tasks to parallel agents and coordinate their results."
+      }
+    },
+    "executing-plans": {
+      "description": "Use when you have a written implementation plan to execute in a separate session with review checkpoints",
+      "interface": {
+        "display_name": "Executing Plans",
+        "short_description": "按照书面实现计划分批执行任务，并在各检查点进行审查",
+        "default_prompt": "Use $superpowers:executing-plans to execute this written implementation plan with review checkpoints."
+      }
+    },
+    "finishing-a-development-branch": {
+      "description": "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work",
+      "interface": {
+        "display_name": "Finishing a Development Branch",
+        "short_description": "完成实现与测试后，选择合适的开发分支集成和收尾方式",
+        "default_prompt": "Use $superpowers:finishing-a-development-branch to choose how to integrate this completed work and finish the branch."
+      }
+    },
+    "receiving-code-review": {
+      "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
+      "interface": {
+        "display_name": "Receiving Code Review",
+        "short_description": "严谨评估收到的代码审查反馈，核验后再决定是否落实建议",
+        "default_prompt": "Use $superpowers:receiving-code-review to evaluate this code review feedback and verify the proposed changes."
+      }
+    },
+    "requesting-code-review": {
+      "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
+      "interface": {
+        "display_name": "Requesting Code Review",
+        "short_description": "在任务完成或合并代码前请求有针对性的代码审查和验收",
+        "default_prompt": "Use $superpowers:requesting-code-review to request a focused code review of the current changes against the requirements."
+      }
+    },
+    "subagent-driven-development": {
+      "description": "Use when executing implementation plans with independent tasks in the current session",
+      "interface": {
+        "display_name": "Subagent-Driven Development",
+        "short_description": "在当前会话中由子智能体分阶段执行实现计划并接受审查",
+        "default_prompt": "Use $superpowers:subagent-driven-development to execute this implementation plan with subagents in the current session."
+      }
+    },
+    "systematic-debugging": {
+      "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
+      "interface": {
+        "display_name": "Systematic Debugging",
+        "short_description": "在尝试修复之前系统复现问题、收集可靠证据并定位根因",
+        "default_prompt": "Use $superpowers:systematic-debugging to reproduce this problem, gather evidence, and identify its root cause."
+      }
+    },
+    "test-driven-development": {
+      "description": "Use when implementing any feature or bugfix, before writing implementation code",
+      "interface": {
+        "display_name": "Test-Driven Development",
+        "short_description": "先建立失败测试，再用最小代码实现完成功能或缺陷修复",
+        "default_prompt": "Use $superpowers:test-driven-development to implement this change through a failing test, minimal implementation, and refactoring."
+      }
+    },
+    "using-git-worktrees": {
+      "description": "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback",
+      "interface": {
+        "display_name": "Using Git Worktrees",
+        "short_description": "为独立功能开发或计划执行创建隔离的 Git 工作区",
+        "default_prompt": "Use $superpowers:using-git-worktrees to set up an isolated workspace for this task."
+      }
+    },
+    "using-superpowers": {
+      "description": "Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions",
+      "interface": {
+        "display_name": "Using Superpowers",
+        "short_description": "确认当前任务应当调用哪些 Superpowers 工作流与技能",
+        "default_prompt": "Use $superpowers:using-superpowers to identify and apply the appropriate skills for the current task."
+      }
+    },
+    "verification-before-completion": {
+      "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
+      "interface": {
+        "display_name": "Verification Before Completion",
+        "short_description": "声明工作完成之前运行相关验证，并依据实际输出确认结果",
+        "default_prompt": "Use $superpowers:verification-before-completion to run the relevant checks and verify this work before claiming completion."
+      }
+    },
+    "writing-plans": {
+      "description": "Use when you have a spec or requirements for a multi-step task, before touching code",
+      "interface": {
+        "display_name": "Writing Plans",
+        "short_description": "将明确需求转化为细致、可执行且可验证的分步实现计划",
+        "default_prompt": "Use $superpowers:writing-plans to turn these requirements into an actionable implementation plan."
+      }
+    },
+    "writing-skills": {
+      "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment",
+      "interface": {
+        "display_name": "Writing Skills",
+        "short_description": "创建、编辑并在部署前验证可复用的 Codex Skill",
+        "default_prompt": "Use $superpowers:writing-skills to create or improve this skill and verify it before deployment."
+      }
+    }
+  }
+}
