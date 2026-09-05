@@ -6,14 +6,13 @@ sandbox_mode = "danger-full-access"
 approval_policy = "never"
 service_tier = "default"
 model_verbosity = "high"
- model_context_window = 872000
+model_context_window = 872000
 
 [features]
 memories = true
 goals = true
-
-[features.multi_agent_v2]
-enabled = false
+multi_agent = false
+multi_agent_v2 = false
 
 [agents]
 enabled = false
