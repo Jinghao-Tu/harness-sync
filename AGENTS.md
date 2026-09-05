@@ -2,6 +2,7 @@
 2. AGENTS.md 是本仓库的描述
 3. codex/AGENTS.md 是 Codex 使用的全局 AGENTS.md, 安装目录是 ~/.codex/AGENTS.md
 4. codex/config.toml 是 Codex 使用的全局配置文件, 主要包含配置: 关闭子代理, 开启记忆(但关闭工具记忆), 开启 goal 模式, desktop 配置
+   - 运行 `uv run scripts/sync_codex_config.py` 增量同步到 `~/.codex/config.toml`, 可传入目标路径; 缺失项添加, 冲突值以仓库为准, 表递归合并, 数组整体更新, 保留目标独有项。
 5. upstream/ 下是 Superpowers 和 Supervisor 的 Git submodule, 不直接修改其中的源码
 6. plugins/*.json 保存插件和 skill 元数据; scripts/build_plugins.py 构建到 dist/, --install 使用 Codex CLI 注册并安装
 7. dist/ 是可重新生成的产物, 不提交 Git; 插件与技能清单见 plugins/list.md
