@@ -6,6 +6,7 @@ sandbox_mode = "danger-full-access"
 approval_policy = "never"
 service_tier = "default"
 model_verbosity = "high"
+ model_context_window = 872000
 
 [features]
 memories = true
@@ -23,21 +24,27 @@ generate_memories = true
 use_memories = true
 
 [desktop]
+# Keep awake
 preventSleepWhileRunning = true
+keepRemoteControlAwakeWhilePluggedIn = true
+# Follow-up messages
 followUpQueueMode = "steer"
+# Appearance
 sansFontSize = 15
 codeFontSize = 13
-appearanceLightCodeThemeId = "codex"
 appearanceTheme = "light"
+appearanceLightCodeThemeId = "codex"
 appearanceDarkCodeThemeId = "catppuccin"
 reduced-motion-preference = "system"
 appearanceDiffMarkerStyle = "color"
-git-commit-instructions = "Use Conventional Commit. Use English."
-git-show-sidebar-pr-icons = false
+usePointerCursors = true
+# Conversation details
 conversationDetailMode = "STEPS_COMMANDS"
 show-context-window-usage = true
+# Reasoning effort
 enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "ultra", "max"]
-show-ultra-in-model-picker-slider = false
-keepRemoteControlAwakeWhilePluggedIn = true
+show-ultra-in-model-picker-slider = true
+# Git and pull requests
+git-commit-instructions = "Use Conventional Commit. Use English."
 git-pr-instructions = "Use Conventional Commit. Use English."
-usePointerCursors = true
+git-show-sidebar-pr-icons = false
