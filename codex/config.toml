@@ -9,18 +9,14 @@ model_verbosity = "high"
 model_context_window = 872000
 
 [features]
-memories = true
 goals = true
+memories = false
 multi_agent = false
 multi_agent_v2 = false
+terminal_resize_reflow = true
 
 [agents]
 enabled = false
-
-[memories]
-disable_on_external_context = true
-generate_memories = true
-use_memories = true
 
 [desktop]
 # Keep awake
