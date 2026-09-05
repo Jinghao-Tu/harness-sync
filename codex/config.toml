@@ -6,7 +6,6 @@ sandbox_mode = "danger-full-access"
 approval_policy = "never"
 service_tier = "default"
 model_verbosity = "high"
-model_context_window = 872000
 
 [features]
 goals = true
