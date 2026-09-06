@@ -13,6 +13,7 @@ memories = false
 multi_agent = false
 multi_agent_v2 = false
 terminal_resize_reflow = true
+context_management = true
 
 [agents]
 enabled = false
