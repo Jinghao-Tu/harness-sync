@@ -1,18 +1,21 @@
 # ... model config
 
-approvals_reviewer = "user"
-personality = "pragmatic"
-sandbox_mode = "danger-full-access"
-approval_policy = "never"
-service_tier = "default"
-model_verbosity = "high"
+model_reasoning_summary = "concise"
+model_verbosity = "low"
 model_context_window = 408000
+personality = "pragmatic"
+service_tier = "default"
+plan_mode_reasoning_effort = "high"
+
+approvals_reviewer = "auto_review"
+approval_policy = "never"
+sandbox_mode = "danger-full-access"
 
 [features]
-goals = true
 memories = false
 multi_agent = false
 multi_agent_v2 = false
+goals = true
 terminal_resize_reflow = true
 context_management = true
 
