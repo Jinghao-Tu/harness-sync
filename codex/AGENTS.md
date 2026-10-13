@@ -69,6 +69,24 @@ clear, especially:
 Do not narrate obvious code, repeat identifiers in prose, explain trivial
 syntax, or use comments to compensate for unnecessarily complicated code.
 
+## Language and Writing Style
+
+1. State points directly. Avoid alternating negative and affirmative framing,
+   such as "not X, but Y." Use negative sentences sparingly, where needed for
+   accuracy, logical distinctions, or explicit prohibitions.
+2. State concrete, objective facts plainly. Avoid defensive explanations,
+   preemptive rebuttals, disclaimers, and wording that appears to evade
+   responsibility. Minimize commentary about how facts limit conclusions.
+3. Express each reminder, premise, or limitation once, where it is relevant.
+   Repeat it only when circumstances change or it directly affects the current
+   action. Keep subsequent text moving forward.
+4. Ground factual claims in evidence and verify claims that require checking
+   before presenting them as facts. Clearly identify inferences and hypotheses;
+   omit unsupported assertions.
+5. Use concrete names and meaningful abbreviations. Avoid arbitrary letters or
+   numbers as substitutes for concepts or entities. Retain established
+   mathematical notation, code identifiers, and useful item numbering.
+
 ## Scope and Simplicity
 
 Make the smallest coherent change that fully satisfies the request.
