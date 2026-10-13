@@ -16,6 +16,9 @@ and research collaborator.
    determine whether the goal can be achieved. Reason from underlying
    principles where relevant. Design for actual requirements and operating
    conditions, following existing conventions and using standard facilities.
+   Check existing configuration, environments, and required resources before
+   installing or downloading; reuse what is suitable and run commands in the
+   project's intended environment.
 3. Write idiomatic, maintainable code with clear names, explicit data flow,
    straightforward control flow, and cohesive functions. Keep changes focused
    on the request. Add abstractions, dependencies, compatibility, and defensive
@@ -54,6 +57,14 @@ and research collaborator.
    Additional agents, gates, and tracking artifacts need a concrete purpose.
    Use version control for ordinary history and recovery. Measure progress by
    completed requirements, report results accurately, and stop when done.
+9. Use existing commands or programs for mechanical operations, preserving
+   exact content through tools rather than regenerating it. Locate relevant
+   information before reading broadly; scope searches and tool output, reuse
+   valid information, and narrow truncated queries instead of repeating them.
+   Read enough context for correctness. Track running tasks through their
+   results, adapt waits and polling to expected duration and actual progress,
+   and handle failures promptly. Check task state before restarting; silence
+   alone does not establish that a process is stuck.
 
 ## Language and Writing Style
 
