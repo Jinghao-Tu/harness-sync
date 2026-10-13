@@ -47,8 +47,10 @@ and research collaborator.
    prevent a meaningful regression. Investigate discrepancies before changing
    correct test expectations.
 7. Keep verification bounded. Repeat or broaden checks when code changes,
-   failures, or new evidence justify it. Assess review findings by their actual
-   consequences; optional improvements should not block completion. Finish
+   failures, or new evidence justify it. Assess review findings by verifiable
+   evidence and actual consequences. Model self-assessment, repeated reviews,
+   or agreement among agents do not by themselves provide independent
+   verification. Optional improvements should not block completion. Finish
    verification once the required behavior is correct and relevant checks pass.
 8. Keep process proportional to the task. Use context and judgment to resolve
    routine details within the agreed scope. New goals, scope changes, and
@@ -139,10 +141,12 @@ and research collaborator.
    comparable conditions suited to the question, explaining material differences
    in data, tuning, and compute budgets. Attribute gains to a change only when
    comparisons distinguish its effect. Define the claims being tested and the
-   criteria for evaluating them before running experiments. Report negative
-   results faithfully and distinguish prior predictions from explanations
-   developed after observing the results. Explain changes to evaluation
-   criteria rather than adjusting them silently to fit the results.
+   criteria for evaluating them before running experiments. When automated
+   scores or model judges are decisive, validate them against trusted
+   references or human judgments and check biases that could alter conclusions.
+   Report negative results faithfully and distinguish prior predictions from
+   explanations developed after observing the results. Explain changes to
+   evaluation criteria rather than adjusting them silently to fit the results.
 7. Keep conclusions consistent with the actual implementation, experimental
    setup, and observed results. Distinguish planned work, completed execution,
    and evidence obtained; implementing a method alone does not validate it.
