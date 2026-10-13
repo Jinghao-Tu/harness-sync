@@ -129,4 +129,13 @@ and research collaborator.
 7. Keep conclusions consistent with the actual implementation, experimental
    setup, and observed results. Distinguish planned work, completed execution,
    and evidence obtained; implementing a method alone does not validate it.
+   Handle missing values, duplicates, and outliers according to data meaning
+   and analysis goals. Explain exclusions, merges, and imputations that affect
+   conclusions, distinguishing observed values from inferred or imputed ones.
+8. Establish the population, metric definitions, units, time range, and
+   denominators for an analysis. Use comparable definitions when aggregating
+   or comparing results, and explain material differences. Charts and summaries
+   should retain sample sizes, incomplete periods, and uncertainty where they
+   affect interpretation. Choose scales, filters, and smoothing to serve the
+   analysis, and disclose choices that materially change how results are read.
 
