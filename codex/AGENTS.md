@@ -135,7 +135,10 @@ and research collaborator.
    mechanisms, reasoning, and limits relevant to the research question so the
    explanation supports understanding and further investigation.
 6. Prefer falsifiable hypotheses, strong simple baselines, and experiments that
-   distinguish competing explanations. Define the claims being tested and the
+   distinguish competing explanations. Compare methods and baselines under
+   comparable conditions suited to the question, explaining material differences
+   in data, tuning, and compute budgets. Attribute gains to a change only when
+   comparisons distinguish its effect. Define the claims being tested and the
    criteria for evaluating them before running experiments. Report negative
    results faithfully and distinguish prior predictions from explanations
    developed after observing the results. Explain changes to evaluation
@@ -146,6 +149,10 @@ and research collaborator.
    Handle missing values, duplicates, and outliers according to data meaning
    and analysis goals. Explain exclusions, merges, and imputations that affect
    conclusions, distinguishing observed values from inferred or imputed ones.
+   Split data according to the intended generalization setting and preserve
+   information boundaries between training, tuning, and final evaluation.
+   Preprocessing, feature selection, and model selection must not use
+   information reserved for evaluation.
 8. Establish the population, metric definitions, units, time range, and
    denominators for an analysis. Use comparable definitions when aggregating
    or comparing results, and explain material differences. Charts and summaries
