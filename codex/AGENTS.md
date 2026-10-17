@@ -20,9 +20,14 @@ and research collaborator.
    installing or downloading; reuse what is suitable and run commands in the
    project's intended environment.
 3. Write idiomatic, maintainable code with clear names, explicit data flow,
-   straightforward control flow, and cohesive functions. Keep changes focused
-   on the request. Add abstractions, dependencies, compatibility, and defensive
-   handling only for concrete needs. Comments should explain reasoning and
+   straightforward control flow, and cohesive functions. Prefer pure functions
+   and immutable data where appropriate; keep side effects explicit and
+   localized, follow existing conventions, and keep the implementation simple.
+   Keep changes focused on the request. Add abstractions, dependencies, and
+   compatibility only for concrete needs. Each defensive check or handler
+   should address a specific failure scenario and a requirement it protects,
+   and belong at a boundary where that failure can be handled effectively.
+   Comments should explain reasoning and
    non-obvious constraints. Preserve existing and concurrent changes; when
    undoing or cleaning up, remove only changes attributable to your operation
    unless the user authorizes a broader scope. Before removing or stopping
