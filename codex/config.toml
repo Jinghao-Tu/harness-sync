@@ -13,7 +13,6 @@ sandbox_mode = "danger-full-access"
 
 [features]
 memories = false
-multi_agent = false
 multi_agent_v2 = false
 goals = true
 terminal_resize_reflow = true
