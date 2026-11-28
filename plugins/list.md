@@ -27,3 +27,8 @@
 
    - 按需创建符合 Conventional Commits 规范的原子提交。
    - 手动同步至 `~/.codex/skills/git-commit/`，不参与插件构建。
+
+7. [codex-worker](codex-worker/SKILL.md)
+
+   - 指导主 Agent 通过 `codex exec` 调用 Codex CLI（`gpt-6.2-sol` / `gpt-6.2-astra`）作为隔离的子 Agent 执行任务。
+   - 手动同步至 `~/.gemini/config/skills/codex-worker/`，面向主 Agent 使用，不参与 Codex 插件构建。
