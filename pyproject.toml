@@ -1,10 +1,9 @@
 [project]
 name = "harness-sync"
 version = "0.1.0"
-description = "Personal harness configuration and localized Codex plugin builds"
+description = "Personal harness configuration and sync scripts"
 requires-python = ">=3.11"
 dependencies = [
-    "pyyaml>=6.0,<7",
     "tomlkit>=0.13,<1",
 ]
 
